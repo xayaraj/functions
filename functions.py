@@ -7,3 +7,10 @@ def adder(a, b):
     return a + b
 
 adder_lambda = lambda a, b: a + b
+
+class Adder:
+    """ Creates objects that can be called, and when called require two
+        arguments that will be added together.
+    """
+    def __call__(self, a, b):
+        return a + b
