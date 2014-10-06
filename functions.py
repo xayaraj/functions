@@ -17,3 +17,7 @@ class Adder:
     """
     def __call__(self, a, b):
         return a + b
+
+from functools import partial
+
+add10 = partial(adder, 10)
