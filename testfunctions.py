@@ -24,6 +24,10 @@ class TestFunctions(unittest.TestCase):
         " a test case for the Class-based function "
         pass
 
+    def test_partial(self):
+        result = functions.add10(7)
+        self.assertEqual(result, 17)
+
 # 7. (optional) for convenience, make the testing module "runnable", to run
 #    all the tests in this module.
 if __name__ == '__main__':
