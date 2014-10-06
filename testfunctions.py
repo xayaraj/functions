@@ -1,3 +1,5 @@
+__author__ = 'xayarak'
+
 __author__ = 'ijstokes'
 
 # 1. Import the module we want to test
@@ -20,9 +22,10 @@ class TestFunctions(unittest.TestCase):
         result = functions.adder_lambda(10, 20)
         self.assertEqual(result, 30)
 
-    def test_class(self):
-        " a test case for the Class-based function "
-        pass
+    def test_call(self):
+        #6 test __call__
+        result = functions.Adder()(4,5)
+        self.assertEqual(result,9)
 
 # 7. (optional) for convenience, make the testing module "runnable", to run
 #    all the tests in this module.
